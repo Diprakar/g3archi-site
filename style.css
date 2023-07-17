@@ -7,9 +7,8 @@
     background: #FF900E;
     padding: 20px 25px;
     color: #FFF;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.25rem;
+    cursor: pointer;
     border: 0;
 }
 
@@ -48,33 +47,52 @@ nav li a {
 }
 
 /* banner */
-.banner{
-    align-items: center;
-}
+
 .banner-head {
-    width: 850px;
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
 .banner-tittle {
-    width: 862px;
+    width: 800px;
     font-size: 4rem;
     color: #131313;
     font-weight: 700;
-    text-align: center;
 }
 
 .banner-description {
-    width: 855px;
+    width: 805px;
     margin: 0 auto;
     font-size: 1rem;
     font-weight: 400;
     color: #727272;
-    text-align: center;
     margin-bottom: 25px;
 }
-.banner img{
+
+.banner img {
     margin-top: 25px;
     width: 100%;
+}
+
+/* responsive styles */
+@media screen and (max-width: 576px) {
+   
+    .banner-tittle {
+        width: 300px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .banner-description {
+        margin: 0;
+        width: 340px;
+        padding: 10px;
+    }
+    
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
 }

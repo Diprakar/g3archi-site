@@ -210,9 +210,12 @@ main {
         margin: 0px;
         width: 100%;
     }
-
-    .teams-description {
-        width: 100%;
+    #Explore{
+        margin-left: 25px;
+    }
+    .teams-title, .teams-description {
+        margin-left: 25px;
+        width: 90%;
     }
     .facts-card-container{
         width: 80%;
@@ -228,11 +231,26 @@ main {
     header {
         padding: 20px;
     }
-
     nav,
     .teams-container {
         flex-direction: column;
         width: 100%;
         margin: auto;
+    }
+    .teams-title, .teams-description{
+        margin-left: 80px;
+        width: 100%;
+    }
+    #Explore{
+        margin-left: 80px;
+    }
+    .facts-card-container{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .facts-title, .text-light-gray {
+        margin-left: 80px;
+        width: 90%;
     }
 }
